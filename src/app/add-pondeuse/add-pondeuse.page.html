@@ -4,10 +4,20 @@
       <ion-back-button defaultHref="">
       </ion-back-button>
     </ion-buttons>
-    <ion-title>Remplir le tableau pondeuse</ion-title>
+    <ion-title>Le tableau pondeuse</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let m of pondeuse">
+      <ion-label>
+        <p>quantité depart: {{m.qdepart}}</p>
+        <p>nombre de perte: {{m.nperdu}}</p>
+        <p>Date: {{m.Date}}</p>
+        <p>nombre restant: {{m.qrestant}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="success"routerLink="/pondeuse-edit">Modifier</ion-button>
 </ion-content>
