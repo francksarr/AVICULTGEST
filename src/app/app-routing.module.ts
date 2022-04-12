@@ -33,6 +33,26 @@ const routes: Routes = [
   {
     path: 'commande',
     loadChildren: () => import('./commande/commande.module').then( m => m.CommandePageModule)
+  },
+  {
+    path: 'chair-edit',
+    loadChildren: () => import('./chair-edit/chair-edit.module').then( m => m.ChairEditPageModule)
+  },
+  {
+    path: 'pondeuse-edit',
+    loadChildren: () => import('./pondeuse-edit/pondeuse-edit.module').then( m => m.PondeuseEditPageModule)
+  },
+  {
+    path: 'calendrier-chair',
+    loadChildren: () => import('./calendrier-chair/calendrier-chair.module').then( m => m.CalendrierChairPageModule)
+  },
+  {
+    path: 'calendrier-pondeuse',
+    loadChildren: () => import('./calendrier-pondeuse/calendrier-pondeuse.module').then( m => m.CalendrierPondeusePageModule)
+  },
+  {
+    path: 'list-veterinaire',
+    loadChildren: () => import('./list-veterinaire/list-veterinaire.module').then( m => m.ListVeterinairePageModule)
   }
 ];
 @NgModule({
