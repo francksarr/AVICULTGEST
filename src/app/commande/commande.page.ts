@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./commande.page.scss'],
 })
 export class CommandePage implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {

@@ -14,47 +14,13 @@
 </ion-grid>
 <ion-list>
   <ion-list-header> LISTE DES VETERINAIRE </ion-list-header>
-  <ion-item>
+  <ion-item *ngFor="let v of veterinaire">
     <ion-avatar slot="start">
-      <img src="" />
     </ion-avatar>
     <ion-label>
-      <h2>Ciprovet</h2>
-      <h3>TEL:0.0.0.0</h3>
-      <p>Adresse: ouolofobougou</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="" />
-    </ion-avatar>
-    <ion-label>
-      <h2>Pharmavet</h2>
-      <h3>TEL: 0.0.0.0 </h3>
-      <p>Adresse: Kalaban</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="" />
-    </ion-avatar>
-    <ion-label>
-      <h2>Pharmaci vetérinaire</h2>
-      <h3>TEL: 0.0.0.0</h3>
-      <p>Adresse: Missira</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-avatar slot="start">
-      <img src="./avatar-luke.png" />
-    </ion-avatar>
-    <ion-label>
-      <h2>Moustafa</h2>
-      <h3>TEL: 0.0.0.0</h3>
-      <p>Adresse: Badalabougou</p>
+      <h2><strong> {{v.nom}}</strong></h2>
+      <h3><strong>{{v.num}}</strong></h3>
+      <p><strong>{{v.adresse}}</strong></p>
     </ion-label>
   </ion-item>
 </ion-list>
