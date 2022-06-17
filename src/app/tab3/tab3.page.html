@@ -1,16 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title color="primary">
-      LISTE DES CLIENTS
+    <ion-title class="ion-text-center" color="primary" >
+     PARAMETRE
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
- <ion-item class="ion-text-center" routerLink="/clients" color="secondary">
-  <ion-label color="primary"> <strong>LISTE DES CLIENTS </strong></ion-label>
+  <ion-item>
+  <ion-button routerLink="/add-client">
+  <ion-icon slot="start" name="person-add-sharp"></ion-icon>
+  <strong>AJOUTER CLIENTS </strong>
+</ion-button>
 </ion-item>
-<ion-item class="ion-text-center" routerLink="/commande" color="secondary">
-  <ion-label color="primary"><strong>Commandes </strong></ion-label>
+<ion-item>
+  <ion-button routerLink="/add-commande">
+  <ion-icon slot="start" name="cart-outline"></ion-icon>
+  <strong>AJOUTER COMMANDE </strong>
+</ion-button>
 </ion-item>
+<ion-item>
+  <ion-button routerLink="/user-edit">
+  <ion-icon slot="start" name="build-outline"></ion-icon>
+  <strong>Modifier profile utilisateur </strong>
+</ion-button>
+</ion-item>
+
+
+
+
 </ion-content>

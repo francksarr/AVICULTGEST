@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    <ion-title class="ion-text-center">Profile utilisateur</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let p of Profile">
+      <img src="./assets/{{p.photo}}"/>
+      <ion-label>
+        <h2>{{p.nom}}</h2>
+        <h3>Tel: {{p.numero}}</h3>
+        <p>Adresse: {{p.adresse}}</p>
+      </ion-label>
+    
+  </ion-card>
+</ion-content>

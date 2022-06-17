@@ -8,18 +8,12 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let c of clients">
+  <ion-card *ngFor="let c of clients">
       <ion-label>
-        <h2>{{c.nom}}</h2>
-        <h3>{{c.numero}}</h3>
-        <p>{{c.adresse}}</p>
+        <h2>Nom: {{c.nom}}</h2>
+        <h3>Tel: {{c.numero}}</h3>
+        <p> Adresse: {{c.adresse}}</p>
       </ion-label>
-    </ion-item>
-  </ion-list>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button routerLink="/add-client">
-      <ion-icon name="person-add-sharp"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+    
+</ion-card>
 </ion-content>

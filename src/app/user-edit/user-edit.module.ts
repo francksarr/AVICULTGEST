@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AjouterCommandePageRoutingModule } from './ajouter-commande-routing.module';
+import { UserEditPageRoutingModule } from './user-edit-routing.module';
 
-import { AjouterCommandePage } from './ajouter-commande.page';
+import { UserEditPage } from './user-edit.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AjouterCommandePageRoutingModule
+    UserEditPageRoutingModule
   ],
-  declarations: [AjouterCommandePage]
+  declarations: [UserEditPage]
 })
-export class AjouterCommandePageModule {}
+export class UserEditPageModule {}

@@ -54,9 +54,14 @@ const routes: Routes = [
     path: 'list-veterinaire',
     loadChildren: () => import('./list-veterinaire/list-veterinaire.module').then( m => m.ListVeterinairePageModule)
   },  {
-    path: 'ajouter-commande',
-    loadChildren: () => import('./ajouter-commande/ajouter-commande.module').then( m => m.AjouterCommandePageModule)
-  }
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'user-edit',
+    loadChildren: () => import('./user-edit/user-edit.module').then( m => m.UserEditPageModule)
+  },
+
 
 ];
 @NgModule({
